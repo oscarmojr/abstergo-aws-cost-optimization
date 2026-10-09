@@ -1,0 +1,7 @@
+sistema;funcao;servidor_atual;cpu_nucleos;memoria_gb;disco_gb;uso_medio_percent;horario_pico;criticidade;destino_aws
+ERP / gestão;Financeiro, fiscal e estoque;SRV-ERP-01;8;32;500;35;08h-11h e fim do mês;Alta;Amazon EC2 + Savings Plan
+Sistema de pedidos;Recebe pedidos das farmácias;SRV-PED-01;4;16;200;25;07h-10h;Alta;Amazon EC2 + Auto Scaling
+Portal das farmácias;Consulta de catálogo e status;SRV-WEB-01;4;8;100;20;08h-18h;Média;Amazon EC2 + Auto Scaling
+Servidor de arquivos;NF-e, laudos, certificados de lote;SRV-ARQ-01;2;8;4000;15;Contínuo;Alta;Amazon S3 + Glacier
+Backup;Cópias dos sistemas;SRV-BKP-01;2;8;8000;10;Madrugada;Alta;Amazon S3
+Integração/EDI;Troca de arquivos com farmácias;SRV-INT-01;2;4;100;5;Sob demanda;Média;AWS Lambda

@@ -1,0 +1,14 @@
+item;categoria;modelo_atual_on_premises_R$_mes;modelo_aws_R$_mes;servico_aws;observacao
+Servidores (depreciação e renovação);Computação;6000;0;Amazon EC2;Hardware deixa de ser comprado
+Contrato de manutenção de hardware;Computação;1500;0;Amazon EC2;Incluso no serviço gerenciado
+Energia e refrigeração do data center;Infraestrutura;2500;300;Amazon EC2 / S3;Restam apenas os equipamentos de escritório
+Instâncias EC2 (carga fixa com Savings Plan);Computação;0;3200;Amazon EC2;Desconto por compromisso de 1 ano
+Instâncias EC2 extras nos picos (Auto Scaling);Computação;0;800;EC2 Auto Scaling;Ligadas só nos horários de pico
+Storage e servidor de arquivos;Armazenamento;1800;0;Amazon S3;Equipamento substituído
+Mídias e rotina de backup;Armazenamento;900;0;Amazon S3;Backup automático e versionado
+Armazenamento de documentos ativos;Armazenamento;0;450;S3 Intelligent-Tiering;Pedidos e NF-e recentes
+Arquivo legal de documentos antigos;Armazenamento;0;120;S3 Glacier;Retenção fiscal e sanitária
+Servidor dedicado à integração com farmácias;Integração;1200;0;AWS Lambda;Sem servidor ligado 24h
+Execuções de funções de integração;Integração;0;150;AWS Lambda;Cobrança por execução
+Horas de trabalho manual em pedidos;Operação;3000;1000;AWS Lambda;Automação reduz retrabalho
+TOTAL;;16900;6020;;Valores ilustrativos - validar na AWS Pricing Calculator
